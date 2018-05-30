@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>kappa-core</title>
+    <style>
+      body {
+        margin: auto;
+        margin-top: 0.5em;
+        max-width: 100ex;
+        padding-left: 5ex;
+        padding-right: 5ex;
+        padding-bottom: 5em;
+        font-family: monospace;
+      }
+      button {
+        font-family: monospace;
+      }
+      #logo {
+        float: left;
+        margin-right: 5ex;
+        margin-bottom: 1em;
+        margin-left: 1ex;
+        margin-top: 1ex;
+        width: 35ex;
+        height: 35ex;
+      }
+      #header {
+        background-color: #888888;
+        color: white;
+        padding-bottom: 0.2em;
+        padding-top: 0.2em;
+        padding-left: 5ex;
+      }
+      .break {
+        clear: left;
+      }
+      pre {
+        overflow-x: scroll;
+        background-color: #eae5e5;;
+        padding: 1em;
+      }
+      code {
+        background-color: #eae5e5;;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="logo" src="kappa.svg">
+    <div id="header">
+      <h1>kappa-core</h1>
+      <p>Peer to peer database.</p>
+      <p>
+        <a href="https://github.com/noffle/kappa-core"
+        ><button>follow kappa-core on github</button></a>
+      </p>
+    </div>
+    <p>
+      kappa-core is a distributed, offline-first database using append-only
+      logs and lightweight materialized views.
+    </p>
+    <p>
+      Peers can replicate with each other over any transport (websockets, udp,
+      bluetooth, sound waves) without conflicts.
+    </p>
+    <div class="break"></div>
+
+    <h2><a href="#whyp2p" name="whyp2p">why peer to peer?</a></h2>
+
+    <p>
+      <ul>
+        <li>personal & community empowerment</li>
+        <li>inverse scaling dynamics of p2p</li>
+        <li>offline & local network use</li>
+      </ul>
+    </p>
+
+    <h2><a href="#whylogs" name="whylogs">why append only logs?</a></h2>
+
+    <ul>
+      <li>history is immutable
+      <li>feeds are cryptographically secure & cannot be tampered with
+      <li>conflict-free replication
+      <li>each user's subjective view of events represented
+      <li>read more about kappa architectures at <a href="http://kappa-architecture.com">http://kappa-architecture.com</a>
+    </ul>
+
+    <h2><a href="#now" name="now">how do I get started?</a></h2>
+    <p>
+      check out the <a
+        href="https://github.com/noffle/kappa-core">kappa-core</a> github repo
+    </p>
+
+    <h2><a href="#roadmap" name="roadmap">what can it do?</a></h2>
+
+    <ul>
+      <li>create a database that runs on node and the browser</li>
+      <li>replicate between peers over websockets, webrtc, utp, etc</li>
+      <li>represent log data using versioned materialized views that are cheap to create, destroy, and regenerate</li>
+    </ul>
+
+    <h2><a href="#learn-more" name="learn-more">learn more</a></h2>
+
+    <ul>
+      <li><a href="https://github.com/noffle/kappa-core/blob/master/doc/ARCHITECTURE.md"
+      >kappa-core architecture doc</a></li>
+    </ul>
+  </body>
+</html>
+
